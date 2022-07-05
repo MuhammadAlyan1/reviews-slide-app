@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reviews-slide-app/static/css/main.54b47f05.css",
+    "main.js": "/reviews-slide-app/static/js/main.bcb5eb7a.js",
+    "index.html": "/reviews-slide-app/index.html",
+    "main.54b47f05.css.map": "/reviews-slide-app/static/css/main.54b47f05.css.map",
+    "main.bcb5eb7a.js.map": "/reviews-slide-app/static/js/main.bcb5eb7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54b47f05.css",
+    "static/js/main.bcb5eb7a.js"
+  ]
+}
