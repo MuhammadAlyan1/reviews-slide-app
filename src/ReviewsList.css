@@ -1,0 +1,112 @@
+:root {
+  --clr-body: #f1f5f8;
+  --clr-orange: #ba5d2c;
+  --clr-btn-background: #617d98;
+  --clr-quote: #6e88a1;
+  --clr-main-heading: #324d67;
+  --clr-image-border: #bcccdc;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: var(--clr-body);
+}
+
+/* 
+=============
+container
+=============
+*/
+
+.container {
+  max-width: 800px;
+  padding: 4rem;
+}
+
+.container .main-heading {
+  color: var(--clr-main-heading);
+  font-size: 2rem;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.main-heading::before {
+  content: "///";
+  color: var(--clr-orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: -10.3px;
+  margin-right: 1rem;
+}
+
+/* 
+===================
+container
+-==================
+*/
+
+.container {
+  position: relative;
+  min-height: 400px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+/* 
+===================
+reviews-container
+===================
+*/
+
+.reviews-container {
+  --transition-duration: 0.3s;
+  position: relative;
+  max-width: 800px;
+  height: 550px;
+  display: flex;
+}
+
+.reviews-container .previous {
+  transform: translateX(-100%);
+  transition: all var(--transition-duration) ease;
+}
+
+.reviews-container .next {
+  transform: translateX(100%);
+  transition: all var(--transition-duration) ease;
+}
+
+.reviews-container .active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all var(--transition-duration) ease;
+}
+
+.container button {
+  color: white;
+  background-color: var(--clr-btn-background);
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .previousBtn {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.container .nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,83 @@
+/* 
+============ 
+image-div
+============ 
+*/
+
+.review {
+  max-width: 800px;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+/* 
+============ 
+image-div
+============ 
+*/
+
+.image-div {
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 50%;
+  position: relative;
+  border: 4px solid var(--clr-image-border);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-div img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 
+============ 
+content-div
+============ 
+*/
+
+.content-div .person-name {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--clr-orange);
+  margin-bottom: 0px;
+}
+
+.content-div .person-job {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clr-main-heading);
+  margin-top: 0.5rem;
+}
+
+.content-div .person-review {
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 1.3;
+  color: var(--clr-quote);
+  max-width: 60ch;
+  margin-inline: auto;
+  position: relative;
+}
+
+.content-div .person-review::after {
+  content: "\275E";
+  display: block;
+  font-size: 5rem;
+  color: var(--clr-orange);
+  margin: 0px;
+  padding: 0px;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
